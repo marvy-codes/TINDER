@@ -1,9 +1,17 @@
+import React from 'react';
+import Header from './Header.js'
+
 function App() {
-  return (
-    <div className="App">
-      <h1>This is a tinder app</h1>
-    </div>
-  );
+    return (
+        <div className="app">
+            {/* Header */}
+            <Header />
+                
+            {/*  TinderCards */}
+            
+            {/*  SwiperButtons */}
+        </div>
+    );
 }
 
 export default App;
