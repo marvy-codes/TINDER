@@ -1,7 +1,7 @@
 // eslint-disable
-import React, { useState } from 'react'
-import TinderCard from 'react-tinder-card'
-// import './Tindercards.css';
+import React, { useState } from 'react';
+import TinderCard from 'react-tinder-card';
+import './Tindercards.css';
 
 function TinderCards() {
     const [people] = useState([
