@@ -9,7 +9,7 @@ function TinderCards() {
         {
         name: 'ElonMusk',
         url:
-            'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F36-364505_elon-musk-png-transparent-image-elon-musk-wallpaper.png&imgrefurl=https%3A%2F%2Fwww.kindpng.com%2Fimgv%2FhJRooT_elon-musk-png-transparent-image-elon-musk-wallpaper%2F&tbnid=jACBdddD61owbM&vet=12ahUKEwj2wrDXxZXwAhUG-hoKHfZlD6IQMygEegUIARC9AQ..i&docid=NNyo49rq4iWl8M&w=860&h=1067&q=free%20elon%20musk%20image&ved=2ahUKEwj2wrDXxZXwAhUG-hoKHfZlD6IQMygEegUIARC9AQ',
+            'https://m',
         },
         {
         name: 'jeff bezos',
@@ -30,10 +30,10 @@ function TinderCards() {
                         // onCardLeftScreen={() => outOfFrame(character.name)}
                     >
                         <div
-                        style={{ backgroundImage: `url(${person.url})` }}
-                        className='card'
+                            style={{ backgroundImage: `url(${person.url})` }}
+                            className='card'
                         >
-                        <h3>{person.name}</h3>
+                            <h3>{person.name}</h3>
                         </div>
                     </TinderCard>
                 )}

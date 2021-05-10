@@ -10,3 +10,18 @@
     background-size: cover;
     background-position: center;
 }
+.tinderCards__cardsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.swipe {
+    position: absolute;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: #fff555;
+}
