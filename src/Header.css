@@ -7,8 +7,8 @@
 }
 .header__logo {
     object-fit: contain;
-    height: 40px;
+    height: 20px;
 }
 .header_icon {
-    padding: 20px;
+    padding: 10px;
 }
