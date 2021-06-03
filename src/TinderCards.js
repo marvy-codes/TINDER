@@ -9,7 +9,7 @@ function TinderCards() {
         {
         name: 'ElonMusk',
         url:
-            'https://m',
+            'https://www.biography.com/.image/t_share/NTY2MzU3Nzk2oTM2UMWNTWx/elon_must_royal_society.jpg',
         },
         {
         name: 'jeff bezos',
