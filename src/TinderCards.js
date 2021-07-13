@@ -1,22 +1,20 @@
 // eslint-disable
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TinderCard from 'react-tinder-card';
 import './Tindercards.css';
+import axios from './axios'
 // import cardpic from './jeff_marvy.JPG'
 
 function TinderCards() {
-    const [people] = useState([
-        {
-        name: 'ElonMusk',
-        url:
-            'https://www.biography.com/.image/t_share/NTY2MzU3Nzk2oTM2UMWNTWx/elon_must_royal_society.jpg',
-        },
-        {
-        name: 'jeff bezos',
-        url:
-            'https://www.google.com/search?q=jeff+bezos+portrait+picture&sa=X&biw=1222&bih=566&sxsrf=ALeKk01xopLNXVLyTSjF9m07qhBzIXFmKw:1619220953271&tbm=isch&source=iu&ictx=1&fir=0z_Ibebc0nQu-M%252CEI449RqrIgMR0M%252C_&vet=1&usg=AI4_-kQWcXZFmryjusoEWG9xFSPwVEG8xw&ved=2ahUKEwig2e2NxJXwAhU7DGMBHdNgAkQQ9QF6BAgIEAE#imgrc=0z_Ibebc0nQu-M',
-        },
-    ])
+    const [people, setPeople] = useState([]); 
+
+    useEffect(() => {
+        async function fetchData() {
+            const req = await axios.get('/tinder/cards');
+            setPeople(req.data);
+        }
+        fetchData(); 
+    }, []);
 
     return (
         <div className='tindercards'>
